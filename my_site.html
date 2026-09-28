@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S1VEX · PORTFOLIO</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #121212;
+            --card-bg: #1a1a1a;
+            --text-main: #e0e0e0;
+            --text-muted: #888888;
+            --accent: #ffffff;
+            --border-color: rgba(255, 255, 255, 0.08);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--bg-color);
+            background-image: radial-gradient(circle at 50% 0%, #1e1e1e 0%, #121212 70%);
+            color: var(--text-main);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* --- ШАПКА --- */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px 60px;
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 0.9rem;
+            letter-spacing: 4px;
+            line-height: 1.2;
+            color: var(--accent);
+            text-transform: uppercase;
+        }
+
+        /* --- ОСНОВНОЙ КОНТЕНТ --- */
+        main {
+            flex: 1;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px 80px;
+            width: 100%;
+        }
+
+        /* --- HERO --- */
+        .hero {
+            text-align: center;
+            padding: 100px 20px 80px;
+        }
+
+        .hero-subtitle-top {
+            font-size: 0.7rem;
+            letter-spacing: 4px;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 {
+            font-size: clamp(3rem, 8vw, 6rem);
+            font-weight: 700;
+            letter-spacing: 8px;
+            color: var(--accent);
+            line-height: 1;
+            text-transform: uppercase;
+        }
+
+        /* --- СЕКЦИЯ КОНТАКТОВ --- */
+        .contact-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            padding: 60px;
+            max-width: 600px;
+            margin: 0 auto;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+
+        .contact-card h2 {
+            font-size: 1.5rem;
+            letter-spacing: 4px;
+            color: var(--accent);
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .contact-card > p {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            margin-bottom: 40px;
+        }
+
+        .contact-detail {
+            margin-bottom: 25px;
+        }
+
+        .contact-detail strong {
+            display: block;
+            font-size: 0.7rem;
+            letter-spacing: 2px;
+            color: var(--accent);
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        .contact-detail span,
+        .contact-detail a {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: color 0.3s;
+            word-break: break-all;
+        }
+
+        .contact-detail a:hover { color: var(--accent); }
+
+        /* --- ПОДВАЛ --- */
+        footer {
+            text-align: center;
+            padding: 60px 20px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        footer h3 {
+            font-size: 1rem;
+            letter-spacing: 6px;
+            color: var(--accent);
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        footer p {
+            font-size: 0.7rem;
+            letter-spacing: 3px;
+            color: var(--text-muted);
+            text-transform: uppercase;
+        }
+
+        /* --- АДАПТИВ --- */
+        @media (max-width: 768px) {
+            header { padding: 20px; }
+            .contact-card { padding: 30px 20px; }
+            .hero h1 { letter-spacing: 4px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Шапка -->
+    <header>
+        <div class="logo">S1<br>VEX</div>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero-subtitle-top">Portfolio</div>
+            <h1>S1VEX</h1>
+        </section>
+
+        <!-- КОНТАКТЫ -->
+        <section class="contact-card" id="contact">
+            <h2>CONTACT</h2>
+            <p>Есть дело или просто хочешь сказать "Yo"? Кидай сообщение — я на связи.</p>
+
+            <div class="contact-detail">
+                <strong>Nickname</strong>
+                <span>s1vex</span>
+            </div>
+            <div class="contact-detail">
+                <strong>Age</strong>
+                <span>???</span>
+            </div>
+            <div class="contact-detail">
+                <strong>E-mail</strong>
+                <a href="mailto:s1vexy@icloud.com">s1vexy@icloud.com</a>
+            </div>
+            <div class="contact-detail">
+                <strong>TikTok</strong>
+                <a href="https://www.tiktok.com/@ss1vex" target="_blank" rel="noopener">@ss1vex</a>
+            </div>
+            <div class="contact-detail">
+                <strong>Steam</strong>
+                <a href="https://steamcommunity.com/profiles/76561199596601417/" target="_blank" rel="noopener">steamcommunity.com/s1vex</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer>
+        <h3>The End</h3>
+        <p>Thanks for watching! · Press Thumbs Up</p>
+    </footer>
+
+</body>
+</html>
